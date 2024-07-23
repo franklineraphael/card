@@ -4,7 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>card</title>
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
+    <script src="/script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="cards">
+        <div class="card-back">
+          <img src="/images/bg-card-back.png" alt="" />
+          <div class="cvv">
+            <span>303</span>
+          </div>
+        </div>
+        <div class="card-front">
+          <img src="/images/bg-card-front.png" alt="" />
+          <div class="card details">
+            <img src="/images/card-logo.svg" alt="" />
+            <span class="card-number">959164896389101E</span>
+            <div class="info">
+              <span class="cardholder-name">Frankline</span>
+              <span class="exp date">09/00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form action="#">
+        <div class="form-group">
+          <label for="name">cardholder Name </label>
+          <input
+            type="text"
+            id="name"
+            placeholder="e.g. Frankline "
+            maxlength="25"
+            autocomplete="off"
+          />
+          <span class="info-err">Cannot be blank</span>
+        </div>
+        <div class="form-group">
+          <label for="name">Card Number </label>
+          <input
+            type="text"
+            id="name"
+            placeholder="e.g. 1234 5678 9022 "
+            maxlength="25"
+            autocomplete="off"
+          />
+          <span class="info-err">Cannot be blank</span>
+        </div>
+        <div class="form-exp-date">
+          <div class="form-group">
+            <label for="month">Exp.Date (MM/YY)</label>
+            <div class="date">
+              <input
+                type="text"
+                id="month"
+                placeholder="MM"
+                maxlength="2"
+                autocomplete="off"
+              />
+              <input
+                type="text"
+                id="month"
+                placeholder="YY"
+                maxlength="2"
+                autocomplete="off"
+              />
+            </div>
+            <span class="info-err">Can't be blank</span>
+          </div>
+
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input
+              type="text"
+              id="cvv"
+              placeholder="e.g. 123"
+              maxlength="3"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <button class="btn" type="submit">Confirm</button>
+      </form>
+      <section class="complete">
+        <img src="/Animation - 1721751254701.gif" alt="" />
+        <h1>Thank you!</h1>
+        <p>We've added your card details</p>
+        <button class="btn">continue</button>
+      </section>
+    </main>
+  </body>
 </html>
