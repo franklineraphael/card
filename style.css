@@ -93,3 +93,8 @@ img {
   letter-spacing: 0.065em;
   text-transform: uppercase;
 }
+form {
+  margin-top: 5rem;
+  padding: 0 0.8rem;
+  display: block;
+}
