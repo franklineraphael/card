@@ -1,22 +1,95 @@
-- Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
-- Red (input errors): hsl(0, 100%, 66%)
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
-
-
-- White: hsl(0, 0%, 100%)
-- Light grayish violet: hsl(270, 3%, 87%)
-- Dark grayish violet: hsl(279, 6%, 55%)
-- Very dark violet: hsl(278, 68%, 11%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 18px
-
-### Font
-
-- Family: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
-- Weights: 500
+* {
+  font-family: "Space Grotesk", sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 16px;
+  box-sizing: border-box;
+}
 :root {
+  --active-input-border: Linear gradient hsl(249, 99%, 64%) to
+    hsl(278, 94%, 30%);
+  --input-errors: hsl(0, 100%, 66%);
+  --White: hsl(0, 0%, 100%);
+  --Light-grayish-violet: hsl(270, 3%, 87%);
+  --Dark-grayish-violet: hsl(279, 6%, 55%);
+  --Very-dark-violet: hsl(278, 68%, 11%);
+  font-size: 10px;
+}
+body {
+  font-size: 1.8rem;
+  font-weight: 500;
+  background-image: url(/images/bg-main-mobile.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 24rem;
+}
+main {
+  max-width: 37.5rem;
+  padding: 3.2rem 1.6rem;
+  margin: 0 auto;
+}
+img {
+  display: block;
+}
+.cards {
+  position: relative;
+  height: 25.2rem;
+}
+.card-back {
+  position: relative;
+  max-width: 28.6rem;
+  margin: 0 0 0 auto;
+}
+.card-back img {
+  width: 100%;
+}
+.card-back .cvv {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  color: white;
+  padding-right: 3.6rem;
+}
+.card-front {
+  position: absolute;
+  max-width: 28rem;
+  top: 8.9rem;
+}
+.card-front img {
+  width: 100%;
+}
+.card-details {
+  position: absolute;
+  top: 0;
+  padding: 1.8rem 2rem;
+  width: 100%;
+  height: 100%;
+}
+.card-details img {
+  width: 5.4rem;
+  margin-bottom: 4rem;
+}
+.card-number {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: white;
+  margin-bottom: 2rem;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
 }
