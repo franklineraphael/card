@@ -74,7 +74,7 @@ img {
 }
 .card-details img {
   width: 5.4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 7.7rem;
 }
 .card-number {
   display: block;
@@ -165,4 +165,59 @@ form {
 }
 .complete {
   display: none;
+  text-align: center;
+  margin-top: 4.5rem;
+  padding: 0.9rem;
+}
+.complete img {
+  margin: 0 auto;
+}
+.complete h1 {
+  margin-bottom: 2.4rem;
+}
+.complete p {
+  margin-bottom: 5rem;
+  color: var(--Dark-grayish-violet);
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(/images/bg-main-desktop.png);
+    background-size: 33.5% 100%;
+    background-repeat: no no-repeat;
+  }
+
+  main {
+    max-width: 111.2rem;
+    margin: auto;
+    padding: o;
+    display: flex;
+    align-items: center;
+    gap: 12.7rem;
+    height: 100vh;
+  }
+  .cards {
+    height: 52.8rem;
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: max-content;
+    gap: 3.8rem;
+  }
+  .card-front,
+  .card-back {
+    max-width: max-content;
+  }
+  .card-front {
+    position: relative;
+    top: 0;
+  }
+  .card-back {
+    margin-left: 9.4rem;
+  }
+  .card-back .cvv {
+    font-size: 1.4rem;
+    padding-right: 5.8rem;
+  }
+  .card-details {
+    padding: 2.8rem 3.2rem;
+  }
 }
